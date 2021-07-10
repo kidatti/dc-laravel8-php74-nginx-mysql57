@@ -1,7 +1,8 @@
 #!/bin/bash
+rm -f .env
 cp .env.example .env
-rm -rf vendor
-rm -rf node_modules
+sudo rm -rf vendor
+sudo rm -rf node_modules
 chmod 777 storage/*
 chmod 777 storage/framework/*
 docker-compose up -d

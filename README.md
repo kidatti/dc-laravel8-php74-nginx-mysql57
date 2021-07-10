@@ -1,10 +1,11 @@
+Laravel で作成したアプリを Docker 環境で動作させるサンプル。
 
-実行
+初回起動前（リセット）
 ```bash
-docker compose up
+./startup.sh
 ```
 
-マイグレーション（PHP のコンテナにログイン後に実行）
+2回目以降
 ```bash
-php aritisan migrate
+docker compose up -d
 ```
